@@ -5,8 +5,8 @@ pipeline {
     stages {
          stage('clone down scm') {
              steps {
-                 git branch: 'master'
-                 credentialsId: 'Github_ID'
+                 git branch: 'master',
+                 credentialsId: 'Github_ID',
                  url: 'https://github.com/oscarose/raissa-demo.git'
              }
          }
